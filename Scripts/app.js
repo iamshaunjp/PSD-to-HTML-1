@@ -3,7 +3,7 @@
 
 // Examples 
 
-// document.getElementById('main-heading'); 
+document.getElementById('main-heading'); 
 
 $('#main-heading'); 
 
@@ -11,9 +11,9 @@ $('#main-heading');
 
 
 
-// $(document).ready(function (){
+$(document).ready(function (){
 
-//     alert('jQuery Loaded')
+    alert('jQuery Loaded')
 // }); 
 
 //  Used jQuery to select and manipulate an element 
@@ -29,7 +29,7 @@ console.log(banner[0]);
 // Element Selector 
 $('h3').css({border:'3px solid blue'}); 
 
-// Class selector
+Class selector
 $('.wrapper').css({border:'3px solid red'});
 
 // ID selector 
@@ -66,5 +66,40 @@ $("div [class]").css({border: "2px solid pink"});
 // Targeting ttributes with a specific value 
 
 $("img[alt=quote]").css({border: "2px solid purple"});
+
+
+
+// Traversin the DOM 
+
+
+//Using the next method in jQuery 
+
+$("#contact-methods").next().css({border: "3px solid red"}); 
+
+// Using the previous method in jQuery 
+
+$('#social-nav').prev().css({border: "3px solid blue"}); 
+
+// Using the parent method in jQuery 
+
+$('.banner-title').parent().css({border: "3px solid pink"}); 
+$('.banner-title').parents().css({border: "3px solid pink"}); 
+
+// Using the children methon in jQuery 
+
+$("#social-nav").children().css({border: "3px solid green"}); 
+
+// Using the find method in jQuery 
+
+$("#contact").find(".facebook").css({border:"3px solid purple"}); 
+
+// Using the closest method in jQuery 
+
+$("#social-nav").closest(".wrapper").css({border:"3px solid orange"}); 
+
+
+
+
+
 
 
