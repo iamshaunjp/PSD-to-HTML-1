@@ -105,4 +105,4 @@ $("#contact-methods").css({border:" 2px solid red"})
 .closest("section")
 .css({border: '2px solid blue'})
 
-
+console.log('Hello')
