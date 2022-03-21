@@ -155,17 +155,28 @@ button[0].onclick = function() {
 
 // Removing Content 
 
-$(".button").empty(); 
+// $(".button").empty(); 
 // .empty() remover the inner HTMl within an Element 
 
-$("#points-of-sale").empty(); 
+// $("#points-of-sale").empty(); 
 
-$("#contact img").remove(); 
+// $("#contact img").remove(); 
 
 // .remove() removes the element completely 
 
 
 
 // Changing Attributes 
+
+// $("#contact img").removeAttr("alt"); 
+
+// .removeAttr() removes an attribute completely
+
+// $("#lead-banner img").attr("alt, banner-lead"); 
+
+// .attr() can read or set ny attribute 
+
+
+// Controlling CSS with jQuery 
 
 
