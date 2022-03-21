@@ -103,8 +103,69 @@
 $("#contact-methods").css({border:" 2px solid red"})
 .next().css({border:"3px solid green"})
 .closest("section")
-.css({border: '2px solid blue'})
+.css({border: '2px solid blue'}); 
 
-console.log('Hello');
+// Adding Content Using jQuery 
 
-console.log('Hello'); 
+// Appending 
+let tweet = "The big fight live: Ham vs Cheese!"; 
+
+$("#tweets ").text(tweet);
+
+
+
+//  .append() adds content to the bottom of the element 
+//  .prepend() adds content to the top of an element 
+//  .before() adds content before the element 
+//  .after() adds content after the element 
+//  .html() changes the whole HTML of the element 
+//  .text() changes the text in an element 
+
+
+
+// Wrap and Unwrap elements 
+
+$("section").wrap("<div>");
+$("section").unwrap();
+$("section").wrapAll("<div>");
+
+// wrap() wraps all matched elements individually 
+// unwrap() unwraps all matched elements 
+// wraps all elements combined to make one element 
+
+let wrapper = "<div class = 'wrapper>"; 
+
+let button = $('.button'); 
+
+let wrapped = true ; 
+
+button[0].onclick = function() {
+    if(wrapped){
+        $("section").unwrap();
+        wrapped = false; 
+        button.text("Wrap"); 
+    }
+    else{
+        $("section").wrapAll(wrapper)
+        wrapped = true; 
+        button.text("Unwrap"); 
+    }
+};
+
+
+// Removing Content 
+
+$(".button").empty(); 
+// .empty() remover the inner HTMl within an Element 
+
+$("#points-of-sale").empty(); 
+
+$("#contact img").remove(); 
+
+// .remove() removes the element completely 
+
+
+
+// Changing Attributes 
+
+
